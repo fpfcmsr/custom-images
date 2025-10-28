@@ -1,7 +1,7 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: template
+name: kde-desktop
 # description will be included in the image's metadata
 description: This is my personal OS image.
 
@@ -27,6 +27,8 @@ modules:
         - errornointernet/klassy
         - bazzite-org/webapp-manager
         - bazzite-org/bazzite
+    optfix:
+      - Bitwarden
     install:
       packages:
         # copr packages
@@ -41,9 +43,17 @@ modules:
         - perl-Image-ExifTool 
         - texlive-pdfjam 
         - ocrmypdf
+        # Bitwarden
+        - bitwarden-latest.rpm
     remove:
       packages:
         - ptyxis
+        
+  - type: script
+    snippets:
+      - "rm /bitwarden-latest.rpm"
+      - "ln -sf /usr/lib/opt/Bitwarden/bitwarden /etc/alternatives/bitwarden"
+      - "ln -sf /usr/lib/opt/Bitwarden/desktop_proxy /etc/alternatives/desktop_proxy"
 
   - type: default-flatpaks
     configurations:
