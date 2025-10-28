@@ -6,8 +6,8 @@ name: template
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 42 # latest is also supported if you want new updates ASAP
+base-image: ghcr.io/ublue-os/aurora-dx
+image-version: stable # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -16,21 +16,34 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+        
+  - type: script
+    scripts:
+      - download-bitwarden.sh
 
   - type: dnf
     repos:
       copr:
-        - atim/starship
+        - errornointernet/klassy
+        - bazzite-org/webapp-manager
+        - bazzite-org/bazzite
     install:
       packages:
-        - micro
-        - starship
+        # copr packages
+        - klassy
+        - konsole
+        - webapp-manager
+        - steamdeck-kde-presets-desktop
+        # fedora packages
+        - speech-dispatcher 
+        - android-tools
+        - recoll 
+        - perl-Image-ExifTool 
+        - texlive-pdfjam 
+        - ocrmypdf
     remove:
       packages:
-        # example: removing firefox (in favor of the flatpak)
-        # "firefox" is the main package, "firefox-langpacks" is a dependency
-        - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+        - ptyxis
 
   - type: default-flatpaks
     configurations:
@@ -38,8 +51,13 @@ modules:
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
-          - org.gnome.Loupe
-      - scope: user # Also add Flathub user repo, but no user packages
+          - io.gitlab.librewolf-community
+          - md.obsidian.Obsidian
+          - org.freecad.FreeCAD
+          - eu.betterbird.Betterbird
+          - org.kde.krita
+          - org.kde.qrca
+          - org.signal.Signal
+          - us.zoom.Zoom
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
