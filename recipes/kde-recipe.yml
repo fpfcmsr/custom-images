@@ -53,7 +53,6 @@ modules:
     snippets:
       - "rm /bitwarden-latest.rpm"
       - "ln -sf /usr/lib/opt/Bitwarden/bitwarden /etc/alternatives/bitwarden"
-      - "ln -sf /usr/lib/opt/Bitwarden/desktop_proxy /etc/alternatives/desktop_proxy"
 
   - type: default-flatpaks
     configurations:
@@ -62,5 +61,8 @@ modules:
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
           - io.gitlab.librewolf-community
+          - org.onlyoffice.desktopeditors
+        remove:
+          - org.mozilla.firefox
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
