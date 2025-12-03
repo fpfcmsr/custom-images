@@ -20,6 +20,7 @@ modules:
   - type: script
     scripts:
       - download-bitwarden.sh
+      - netbird-repo.sh
 
   - type: dnf
     repos:
@@ -46,13 +47,14 @@ modules:
         - waydroid
         # Bitwarden
         - bitwarden-latest.rpm
+        # Netbird
+        - netbird
     remove:
       packages:
         - ptyxis
         
   - type: script
     snippets:
-      - "curl -fsSL https://pkgs.netbird.io/install.sh | sh"
       - "rm /bitwarden-latest.rpm"
       - "ln -sf /usr/lib/opt/Bitwarden/bitwarden /etc/alternatives/bitwarden"
 
