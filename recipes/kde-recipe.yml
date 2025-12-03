@@ -43,6 +43,7 @@ modules:
         - perl-Image-ExifTool 
         - texlive-pdfjam 
         - ocrmypdf
+        - waydroid
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
@@ -51,6 +52,7 @@ modules:
         
   - type: script
     snippets:
+      - "curl -fsSL https://pkgs.netbird.io/install.sh | sh"
       - "rm /bitwarden-latest.rpm"
       - "ln -sf /usr/lib/opt/Bitwarden/bitwarden /etc/alternatives/bitwarden"
 
