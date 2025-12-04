@@ -7,7 +7,7 @@ description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/aurora-dx
-image-version: stable # latest is also supported if you want new updates ASAP
+image-version: stable 
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -49,6 +49,7 @@ modules:
     remove:
       packages:
         - ptyxis
+        - tailscale
         
   - type: script
     snippets:
@@ -62,6 +63,7 @@ modules:
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
           - io.gitlab.librewolf-community
+          - io.github.ungoogled_software.ungoogled_chromium
           - org.onlyoffice.desktopeditors
         remove:
           - org.mozilla.firefox
