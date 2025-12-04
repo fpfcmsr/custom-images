@@ -46,8 +46,6 @@ modules:
         - waydroid
         # Bitwarden
         - bitwarden-latest.rpm
-        # Netbird
-        - netbird
     remove:
       packages:
         - ptyxis
