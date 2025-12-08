@@ -30,7 +30,6 @@ modules:
     install:
       packages:
         # copr packages
-        - konsole
         - webapp-manager
         # fedora packages
         - speech-dispatcher 
@@ -43,12 +42,11 @@ modules:
         - ripgrep 
         - fd-find 
         - unzip
-        - yakuake
+        - guake
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
       packages:
-        - ptyxis
         - code
         
   - type: script
