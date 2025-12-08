@@ -44,6 +44,7 @@ modules:
         - texlive-pdfjam 
         - ocrmypdf
         - waydroid
+        - yakuake
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
