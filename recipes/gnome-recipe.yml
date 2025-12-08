@@ -43,6 +43,7 @@ modules:
         - ripgrep 
         - fd-find 
         - unzip
+        - yakuake
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
