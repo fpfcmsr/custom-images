@@ -34,7 +34,6 @@ modules:
       packages:
         # copr packages
         - klassy
-        - konsole
         - webapp-manager
         - steamdeck-kde-presets-desktop
         - netbird-client
@@ -48,6 +47,7 @@ modules:
         - ocrmypdf
         - waydroid
         - yakuake
+        - konsole
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
