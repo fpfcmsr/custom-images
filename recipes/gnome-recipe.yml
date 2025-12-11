@@ -25,12 +25,15 @@ modules:
     repos:
       copr:
         - bazzite-org/webapp-manager
+        - jsbillings/netbird
     optfix:
       - Bitwarden
     install:
       packages:
         # copr packages
         - webapp-manager
+        - netbird-client
+        - netbird-ui
         # fedora packages
         - speech-dispatcher 
         - android-tools
