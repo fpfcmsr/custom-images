@@ -27,6 +27,7 @@ modules:
         - errornointernet/klassy
         - bazzite-org/webapp-manager
         - bazzite-org/bazzite
+        - jsbillings/netbird
     optfix:
       - Bitwarden
     install:
@@ -36,6 +37,8 @@ modules:
         - konsole
         - webapp-manager
         - steamdeck-kde-presets-desktop
+        - netbird-client
+        - netbird-ui
         # fedora packages
         - speech-dispatcher 
         - android-tools
