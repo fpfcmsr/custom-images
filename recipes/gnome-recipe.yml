@@ -46,6 +46,7 @@ modules:
         - fd-find 
         - unzip
         - guake
+        - btrbk
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
