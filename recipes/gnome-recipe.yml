@@ -47,6 +47,7 @@ modules:
         - unzip
         - guake
         - btrbk
+        - waydroid
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
