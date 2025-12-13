@@ -48,6 +48,7 @@ modules:
         - waydroid
         - yakuake
         - konsole
+        - btrbk
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
