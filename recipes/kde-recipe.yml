@@ -20,7 +20,6 @@ modules:
   - type: script
     scripts:
       - download-bitwarden.sh
-      - lts-kernel.sh
 
   - type: dnf
     repos:
@@ -46,6 +45,7 @@ modules:
         - perl-Image-ExifTool 
         - texlive-pdfjam 
         - ocrmypdf
+        - torsocks
         - waydroid
         - yakuake
         - konsole
