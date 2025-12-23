@@ -45,7 +45,7 @@ modules:
         - ripgrep 
         - fd-find 
         - unzip
-        - guake
+        - torsocks
         - btrbk
         - waydroid
         # Bitwarden
