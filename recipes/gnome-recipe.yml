@@ -26,6 +26,7 @@ modules:
       copr:
         - bazzite-org/webapp-manager
         - jsbillings/netbird
+        - petersen/nix
     optfix:
       - Bitwarden
     install:
@@ -34,6 +35,7 @@ modules:
         - webapp-manager
         - netbird-client
         - netbird-ui
+        - nix
         # fedora packages
         - speech-dispatcher 
         - android-tools
