@@ -26,7 +26,6 @@ modules:
       copr:
         - bazzite-org/webapp-manager
         - jsbillings/netbird
-        - petersen/nix
     optfix:
       - Bitwarden
     install:
@@ -35,7 +34,6 @@ modules:
         - webapp-manager
         - netbird-client
         - netbird-ui
-        - nix
         # fedora packages
         - speech-dispatcher 
         - android-tools
@@ -60,6 +58,7 @@ modules:
     snippets:
       - "rm /bitwarden-latest.rpm"
       - "ln -sf /usr/lib/opt/Bitwarden/bitwarden /etc/alternatives/bitwarden"
+      - "mkdir -p /nix && chown root:root /nix"
 
   - type: default-flatpaks
     configurations:
