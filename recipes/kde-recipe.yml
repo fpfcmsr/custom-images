@@ -28,6 +28,7 @@ modules:
         - bazzite-org/webapp-manager
         - bazzite-org/bazzite
         - jsbillings/netbird
+        - petersen/nix
     optfix:
       - Bitwarden
     install:
@@ -38,6 +39,7 @@ modules:
         - steamdeck-kde-presets-desktop
         - netbird-client
         - netbird-ui
+        - nix
         # fedora packages
         - speech-dispatcher 
         - android-tools
