@@ -50,6 +50,7 @@ modules:
         - yakuake
         - konsole
         - btrbk
+        - plasma-workspace-addons
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
