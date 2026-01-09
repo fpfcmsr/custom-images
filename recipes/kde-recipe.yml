@@ -52,6 +52,7 @@ modules:
         - btrbk
         - kdeplasma-addons
         - kalendar
+        - kdepim-addons
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
