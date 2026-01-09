@@ -51,10 +51,7 @@ modules:
         - konsole
         - btrbk
         - kdeplasma-addons
-        - akonadi
-        - kdepim-addons
-        - calendarsupport
-        - eventviews
+        - kalendar
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
