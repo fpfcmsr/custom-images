@@ -51,6 +51,7 @@ modules:
         - konsole
         - btrbk
         - kdeplasma-addons
+        - akonadi
         - kdepim-addons
         - calendarsupport
         - eventviews
