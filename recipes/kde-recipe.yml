@@ -55,6 +55,7 @@ modules:
         - kdepim-addons
         - pimcommon
         - kdepimlibs
+        - kdepim-runtime
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
