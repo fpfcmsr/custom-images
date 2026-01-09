@@ -54,7 +54,7 @@ modules:
         - kdeplasma-addons
         - kdepim-addons
         - pimcommon
-        - kdepim-libs
+        - kdepimlibs
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
