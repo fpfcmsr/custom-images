@@ -50,9 +50,11 @@ modules:
         - yakuake
         - konsole
         - btrbk
+        - btrfs-assistant
         - kdeplasma-addons
-        - kalendar
         - kdepim-addons
+        - pimcommon
+        - kdepim-libs
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
