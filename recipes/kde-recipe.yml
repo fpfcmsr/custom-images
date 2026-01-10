@@ -56,7 +56,7 @@ modules:
         - pimcommon
         - kdepimlibs
         - kdepim-runtime
-        - syncthing
+        - keepassxc
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
