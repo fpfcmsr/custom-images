@@ -58,7 +58,7 @@ modules:
     snippets:
       - "rm /bitwarden-latest.rpm"
       - "ln -sf /usr/lib/opt/Bitwarden/bitwarden /etc/alternatives/bitwarden"
-      - "mkdir -p /nix && chown root:root /nix"
+      - "mkdir -p /nix"
 
   - type: default-flatpaks
     configurations:
