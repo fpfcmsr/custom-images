@@ -52,6 +52,8 @@ modules:
         - btrbk
         - btrfs-assistant
         - keepassxc
+        - kdepim-addons
+        - merkuro
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
