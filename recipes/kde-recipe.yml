@@ -54,6 +54,8 @@ modules:
         - keepassxc
         - kdepim-addons
         - kontact
+        - python3-setproctitle
+        - python3-pyyaml
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
