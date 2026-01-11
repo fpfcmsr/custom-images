@@ -51,11 +51,6 @@ modules:
         - konsole
         - btrbk
         - btrfs-assistant
-        - kdeplasma-addons
-        - kdepim-addons
-        - pimcommon
-        - kdepimlibs
-        - kdepim-runtime
         - keepassxc
         # Bitwarden
         - bitwarden-latest.rpm
