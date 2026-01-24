@@ -55,6 +55,7 @@ modules:
         - keepassxc
         - kdepim-addons
         - kontact
+        - kpeoplevcard
         - python3-setproctitle
         - python3-pyyaml
         # Bitwarden
