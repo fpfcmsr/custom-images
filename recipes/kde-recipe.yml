@@ -58,6 +58,7 @@ modules:
         - kpeoplevcard
         - python3-setproctitle
         - python3-pyyaml
+        - pcsc-lite
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
