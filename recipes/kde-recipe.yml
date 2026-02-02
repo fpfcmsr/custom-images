@@ -77,10 +77,7 @@ modules:
       - notify: true # Send notification after install/uninstall is finished (true/false)
         scope: system
         # If no repo information is specified, Flathub will be used by default
-        install: # system flatpaks we want all users to have and not remove
-          - io.gitlab.librewolf-community
-          - io.github.ungoogled_software.ungoogled_chromium
-          - org.onlyoffice.desktopeditors
+        #install: # system flatpaks we want all users to have and not remove
         remove:
           - org.mozilla.firefox
 
