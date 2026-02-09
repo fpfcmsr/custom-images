@@ -59,6 +59,7 @@ modules:
         - python3-setproctitle
         - python3-pyyaml
         - pcsc-lite
+        - firejail
         # Bitwarden
         - bitwarden-latest.rpm
     remove:
@@ -80,5 +81,7 @@ modules:
         #install: # system flatpaks we want all users to have and not remove
         remove:
           - org.mozilla.firefox
+          - org.onlyoffice.desktopeditors
+          
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
