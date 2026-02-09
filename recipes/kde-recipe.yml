@@ -61,7 +61,7 @@ modules:
         - pcsc-lite
         - firejail
         # Bitwarden
-        - bitwarden-latest.rpm
+        #- bitwarden-latest.rpm
     remove:
       packages:
         - ptyxis
@@ -69,8 +69,8 @@ modules:
         
   - type: script
     snippets:
-      - "rm /bitwarden-latest.rpm"
-      - "ln -sf /usr/lib/opt/Bitwarden/bitwarden /etc/alternatives/bitwarden"
+      #- "rm /bitwarden-latest.rpm"
+      #- "ln -sf /usr/lib/opt/Bitwarden/bitwarden /etc/alternatives/bitwarden"
       - "mkdir -p /nix"
 
   - type: default-flatpaks
