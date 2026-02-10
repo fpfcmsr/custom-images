@@ -60,6 +60,7 @@ modules:
         - python3-pyyaml
         - pcsc-lite
         - firejail
+        - syncthing
         # Bitwarden
         #- bitwarden-latest.rpm
     remove:
