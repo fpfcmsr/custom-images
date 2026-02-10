@@ -61,6 +61,7 @@ modules:
         - pcsc-lite
         - firejail
         - syncthing
+        - plasma-discover
         # Bitwarden
         #- bitwarden-latest.rpm
     remove:
@@ -83,6 +84,6 @@ modules:
         remove:
           - org.mozilla.firefox
           - org.onlyoffice.desktopeditors
-          
+          - io.github.kolunmi.Bazaar
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
