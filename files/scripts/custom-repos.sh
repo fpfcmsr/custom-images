@@ -20,3 +20,7 @@ dnf5 -y install webapp-manager steamdeck-kde-presets-desktop netbird-client
 dnf copr disable -y bazzite-org/webapp-manager
 dnf copr disable -y jsbillings/netbird
 dnf copr disable -y bazzite-org/bazzite
+
+dnf5 -y install niri niri-settings noctalia-shell
+
+dnf5 -y remove xdg-desktop-gnome gnome-desktop3 gnome-desktop4
