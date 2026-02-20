@@ -19,8 +19,8 @@ modules:
         
   - type: script
     scripts:
-      - download-bitwarden.sh
-      - terra.sh
+      #- download-bitwarden.sh
+      - custom-repos.sh
 
   - type: dnf
     repos:
