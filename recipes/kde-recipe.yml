@@ -63,9 +63,9 @@ modules:
         - plasma-discover
 
         # Niri
-        - niri
-        - niri-settings
-        - noctalia-shell
+        #- niri
+        #- niri-settings
+        #- noctalia-shell
         # Bitwarden
         #- bitwarden-latest.rpm
     remove:
