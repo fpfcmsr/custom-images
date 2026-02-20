@@ -63,16 +63,16 @@ modules:
         - plasma-discover
 
         # Niri
-        #- niri
-        #- niri-settings
-        #- noctalia-shell
+        - niri
+        - niri-settings
+        - noctalia-shell
         # Bitwarden
         #- bitwarden-latest.rpm
     remove:
       packages:
         - ptyxis
         - tailscale
-        #- xdg-desktop-portal-gnome
+        - xdg-desktop-portal-gnome
         
   - type: script
     snippets:
