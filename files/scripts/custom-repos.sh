@@ -17,6 +17,6 @@ dnf copr enable -y bazzite-org/bazzite fedora-43-x86_64
 
 dnf5 -y install webapp-manager steamdeck-kde-presets-desktop netbird-client
 
-dnf copr disable -y bazzite-org/webapp-manager fedora-43-x86_64
-dnf copr disable -y jsbillings/netbird fedora-43-x86_64
-dnf copr disable -y bazzite-org/bazzite fedora-43-x86_64
+dnf copr disable -y bazzite-org/webapp-manager
+dnf copr disable -y jsbillings/netbird
+dnf copr disable -y bazzite-org/bazzite
