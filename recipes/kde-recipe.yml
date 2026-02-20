@@ -23,21 +23,21 @@ modules:
       - custom-repos.sh
 
   - type: dnf
-    repos:
-      copr:
-        - bazzite-org/webapp-manager
-        - bazzite-org/bazzite
-        - jsbillings/netbird
-    optfix:
-      - Bitwarden
+    #repos:
+      #copr:
+      #  - bazzite-org/webapp-manager
+      #  - bazzite-org/bazzite
+      #  - jsbillings/netbird
+    #optfix:
+      #- Bitwarden
     install:
       packages:
         # copr packages
-        - klassy
-        - webapp-manager
-        - steamdeck-kde-presets-desktop
-        - netbird-client
-        - netbird-ui
+        #- klassy
+        #- webapp-manager
+        #- steamdeck-kde-presets-desktop
+        #- netbird-client
+        #- netbird-ui
         # fedora packages
         - speech-dispatcher 
         - android-tools
