@@ -72,7 +72,7 @@ modules:
       packages:
         - ptyxis
         - tailscale
-        - xdg-desktop-portal-gnome
+        #- xdg-desktop-portal-gnome
         
   - type: script
     snippets:
