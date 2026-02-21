@@ -61,6 +61,7 @@ modules:
         - firejail
         - syncthing
         - plasma-discover
+        - input-remapper
         # Bitwarden
         #- bitwarden-latest.rpm
     remove:
