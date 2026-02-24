@@ -12,7 +12,7 @@ dnf config-manager addrepo --from-repofile=https://download.opensuse.org/reposit
 dnf5 -y install klassy
 
 dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:luisbocanegra/Fedora_43/home:luisbocanegra.repo
-dnf install plasma-panel-colorizer
+dnf5 -y install plasma-panel-colorizer
 
 dnf copr enable -y bazzite-org/webapp-manager fedora-43-x86_64
 dnf copr enable -y jsbillings/netbird fedora-43-x86_64
