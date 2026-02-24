@@ -11,6 +11,9 @@ dnf5 -y config-manager setopt terra.enabled=0
 dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:paul4us/Fedora_43/home:paul4us.repo
 dnf5 -y install klassy
 
+dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:luisbocanegra/Fedora_43/home:luisbocanegra.repo
+dnf install plasma-panel-colorizer
+
 dnf copr enable -y bazzite-org/webapp-manager fedora-43-x86_64
 dnf copr enable -y jsbillings/netbird fedora-43-x86_64
 dnf copr enable -y bazzite-org/bazzite fedora-43-x86_64
@@ -25,4 +28,4 @@ dnf copr disable -y bazzite-org/bazzite
 
 #dnf5 -y remove xdg-desktop-gnome gnome-desktop3 gnome-desktop4
 
-dnf install @development-tools -y
+# dnf install @development-tools -y
