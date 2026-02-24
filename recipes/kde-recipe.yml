@@ -63,6 +63,7 @@ modules:
         - plasma-discover
         - input-remapper
         - python3-devel
+        - eigen3-devel
         # Bitwarden
         #- bitwarden-latest.rpm
     remove:
