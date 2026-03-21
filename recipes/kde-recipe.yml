@@ -21,6 +21,7 @@ modules:
     scripts:
       #- download-bitwarden.sh
       - custom-repos.sh
+      - plasmoid-nv.sh
 
   - type: dnf
     #repos:
