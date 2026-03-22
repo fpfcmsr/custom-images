@@ -64,6 +64,7 @@ modules:
         - plasma-discover
         - input-remapper
         - memtest86+
+        - memtest
         # Bitwarden
         #- bitwarden-latest.rpm
     remove:
