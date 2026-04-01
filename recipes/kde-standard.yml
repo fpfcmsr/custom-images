@@ -62,8 +62,7 @@ modules:
         - syncthing
         - plasma-discover
         - input-remapper
-        - memtest86+
-        - memtester
+        - wireguard-tools
         # Bitwarden
         #- bitwarden-latest.rpm
     remove:
