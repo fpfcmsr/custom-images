@@ -8,8 +8,8 @@ dnf5 -y install zed
 dnf5 -y config-manager setopt terra.enabled=0
 
 
-dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:paul4us/Fedora_43/home:paul4us.repo
-dnf5 -y install klassy
+#dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:paul4us/Fedora_43/home:paul4us.repo
+#dnf5 -y install klassy
 
 dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:luisbocanegra/Fedora_43/home:luisbocanegra.repo
 dnf5 -y install plasma-panel-colorizer
