@@ -15,10 +15,10 @@ dnf config-manager addrepo --from-repofile=https://download.opensuse.org/reposit
 dnf5 -y install plasma-panel-colorizer
 
 dnf copr enable -y bazzite-org/webapp-manager fedora-43-x86_64
-dnf copr enable -y jsbillings/netbird fedora-43-x86_64
+#dnf copr enable -y jsbillings/netbird fedora-43-x86_64
 dnf copr enable -y bazzite-org/bazzite fedora-43-x86_64
 
-dnf5 -y install webapp-manager steamdeck-kde-presets-desktop netbird-client
+dnf5 -y install webapp-manager steamdeck-kde-presets-desktop # netbird-client
 
 dnf copr disable -y bazzite-org/webapp-manager
 dnf copr disable -y jsbillings/netbird
