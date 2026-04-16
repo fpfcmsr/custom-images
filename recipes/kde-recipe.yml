@@ -64,7 +64,6 @@ modules:
         - plasma-discover
         - input-remapper
         - wireguard-tools
-        - pandoc
         # Bitwarden
         #- bitwarden-latest.rpm
     remove:
