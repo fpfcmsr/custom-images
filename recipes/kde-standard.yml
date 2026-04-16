@@ -43,7 +43,6 @@ modules:
         - android-tools
         - recoll 
         - perl-Image-ExifTool 
-        - texlive-pdfjam 
         - ocrmypdf
         - torsocks
         - waydroid
@@ -63,14 +62,6 @@ modules:
         - plasma-discover
         - input-remapper
         - wireguard-tools
-        - texlive-tcolorbox 
-        - texlive-parskip 
-        - texlive-upquote
-        - texlive-eurosym
-        - texlive-adjustbox 
-        - texlive-titling
-        - texlive-ulem 
-        - texlive-collection-fontsrecommended
         # Bitwarden
         #- bitwarden-latest.rpm
     remove:
