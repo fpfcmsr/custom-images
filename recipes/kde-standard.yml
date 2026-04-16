@@ -53,7 +53,7 @@ modules:
         - btrfs-assistant
         - keepassxc
         - kdepim-addons
-        - kontact
+        - merkuro
         - kpeoplevcard
         - python3-setproctitle
         - python3-pyyaml
