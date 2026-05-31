@@ -57,7 +57,6 @@ modules:
         - python3-setproctitle
         - python3-pyyaml
         - pcsc-lite
-        - firejail
         - syncthing
         - plasma-discover
         - input-remapper
