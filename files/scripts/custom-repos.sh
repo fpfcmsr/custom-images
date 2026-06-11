@@ -30,7 +30,7 @@ curl -L -o /tmp/GramEditor.gpg https://codeberg.org/api/packages/GramEditor/rpm/
 rpm --import /tmp/GramEditor.gpg
 dnf clean all
 dnf makecache
-dnf -y install gram
+dnf -y install --nogpgcheck gram
 
 
 # dnf5 -y install texlive*
