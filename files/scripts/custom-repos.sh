@@ -24,4 +24,9 @@ dnf5 -y install steamdeck-kde-presets-desktop # netbird-client webapp-manager
 #dnf copr disable -y jsbillings/netbird
 dnf copr disable -y bazzite-org/bazzite
 
+
+dnf config-manager addrepo --from-repofile="https://codeberg.org/api/packages/GramEditor/rpm.repo"
+dnf -y install gram
+
+
 # dnf5 -y install texlive*
