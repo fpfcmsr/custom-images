@@ -26,6 +26,8 @@ dnf copr disable -y bazzite-org/bazzite
 
 
 dnf config-manager addrepo --from-repofile="https://codeberg.org/api/packages/GramEditor/rpm.repo"
+rpm --import https://codeberg.org/api/packages/GramEditor/rpm/repository.key
+
 dnf -y install gram
 
 
