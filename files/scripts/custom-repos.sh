@@ -32,5 +32,6 @@ dnf clean all
 dnf makecache
 dnf -y install --nogpgcheck gram
 
+dnf -y install plasma-bigscreen-wayland
 
 # dnf5 -y install texlive*
