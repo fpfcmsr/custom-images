@@ -32,6 +32,6 @@ dnf copr disable -y bazzite-org/bazzite
 #dnf makecache
 #dnf -y install --nogpgcheck gram
 
-dnf -y install plasma-bigscreen-wayland plasma-oxygen oxygen-icon-theme ibus-pinyin
+dnf -y install plasma-bigscreen-wayland plasma-oxygen oxygen-icon-theme fcitx5 fcitx5-qt fcitx5-gtk fcitx5-configtool kcm-fcitx5 fcitx5-lua libime fcitx5-chinese-addons
 
 # dnf5 -y install texlive*
