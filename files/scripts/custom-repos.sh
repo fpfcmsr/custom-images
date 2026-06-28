@@ -25,12 +25,12 @@ dnf5 -y install steamdeck-kde-presets-desktop # netbird-client webapp-manager
 dnf copr disable -y bazzite-org/bazzite
 
 
-dnf config-manager addrepo --from-repofile="https://codeberg.org/api/packages/GramEditor/rpm.repo"
-curl -L -o /tmp/GramEditor.gpg https://codeberg.org/api/packages/GramEditor/rpm/repository.key
-rpm --import /tmp/GramEditor.gpg
-dnf clean all
-dnf makecache
-dnf -y install --nogpgcheck gram
+#dnf config-manager addrepo --from-repofile="https://codeberg.org/api/packages/GramEditor/rpm.repo"
+#curl -L -o /tmp/GramEditor.gpg https://codeberg.org/api/packages/GramEditor/rpm/repository.key
+#rpm --import /tmp/GramEditor.gpg
+#dnf clean all
+#dnf makecache
+#dnf -y install --nogpgcheck gram
 
 dnf -y install plasma-bigscreen-wayland plasma-oxygen oxygen-icon-theme
 
