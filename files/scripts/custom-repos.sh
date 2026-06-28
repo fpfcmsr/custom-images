@@ -32,6 +32,6 @@ dnf clean all
 dnf makecache
 dnf -y install --nogpgcheck gram
 
-dnf -y install plasma-bigscreen-wayland
+dnf -y install plasma-bigscreen-wayland plasma-oxygen oxygen-icon-theme
 
 # dnf5 -y install texlive*
