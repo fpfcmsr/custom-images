@@ -24,6 +24,10 @@ dnf5 -y install steamdeck-kde-presets-desktop # netbird-client webapp-manager
 #dnf copr disable -y jsbillings/netbird
 dnf copr disable -y bazzite-org/bazzite
 
+dnf copr enable -y kawaiidango/pano-scrobbler
+dnf -y install pano-scrobbler
+dnf copr disable -y kawaiidango/pano-scrobbler
+
 
 #dnf config-manager addrepo --from-repofile="https://codeberg.org/api/packages/GramEditor/rpm.repo"
 #curl -L -o /tmp/GramEditor.gpg https://codeberg.org/api/packages/GramEditor/rpm/repository.key
