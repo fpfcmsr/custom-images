@@ -28,7 +28,6 @@ modules:
       #copr:
       #  - bazzite-org/webapp-manager
       #  - bazzite-org/bazzite
-      #  - jsbillings/netbird
     #optfix:
       #- Bitwarden
     install:
@@ -37,8 +36,6 @@ modules:
         #- klassy
         #- webapp-manager
         #- steamdeck-kde-presets-desktop
-        #- netbird-client
-        #- netbird-ui
         # fedora packages
         - speech-dispatcher 
         - android-tools
@@ -62,8 +59,6 @@ modules:
         - plasma-discover
         - input-remapper
         - wireguard-tools
-        # Bitwarden
-        #- bitwarden-latest.rpm
     remove:
       packages:
         - ptyxis
