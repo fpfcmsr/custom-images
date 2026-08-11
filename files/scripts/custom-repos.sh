@@ -40,5 +40,6 @@ dnf -y install plasma-bigscreen-wayland plasma-oxygen oxygen-icon-theme fcitx5 f
 dnf -y install kontact
 
 dnf -y swap tuned-ppd power-profiles-daemon
+dnf -y remove tuned
 
 # dnf5 -y install texlive*
