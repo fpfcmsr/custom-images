@@ -39,4 +39,6 @@ dnf copr disable -y kawaiidango/pano-scrobbler
 dnf -y install plasma-bigscreen-wayland plasma-oxygen oxygen-icon-theme fcitx5 fcitx5-qt fcitx5-gtk fcitx5-configtool kcm-fcitx5 fcitx5-lua libime fcitx5-chinese-addons flashrom
 dnf -y install kontact
 
+dnf -y swap tuned-ppd power-profiles-daemon
+
 # dnf5 -y install texlive*
