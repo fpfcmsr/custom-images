@@ -42,4 +42,9 @@ dnf -y install kontact
 dnf -y swap tuned-ppd power-profiles-daemon
 dnf -y remove tuned
 
+cd /tmp
+git clone https://github.com/Swmarakis/thinkpad-fan-control.git
+cd thinkpad-fan-control
+./install.sh
+
 # dnf5 -y install texlive*
