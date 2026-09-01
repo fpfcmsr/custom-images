@@ -42,5 +42,5 @@ dnf -y install kontact
 dnf -y swap tuned-ppd power-profiles-daemon
 dnf -y remove tuned
 
-dnf -y install thinkfan 
+dnf -y install zcfan 
 # dnf5 -y install texlive*
