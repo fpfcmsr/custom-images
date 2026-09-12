@@ -55,7 +55,6 @@ modules:
         - python3-pyyaml
         - pcsc-lite
         - syncthing
-        - plasma-discover
         - input-remapper
         - wireguard-tools
         # Bitwarden
