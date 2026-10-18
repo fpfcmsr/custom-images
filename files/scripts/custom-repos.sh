@@ -4,7 +4,7 @@ set -euo pipefail
 
 dnf5 -y install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 dnf5 -y config-manager setopt terra.enabled=1
-dnf5 -y install zed vscodium
+dnf5 -y install zed vscodium cardwire-gui
 dnf5 -y config-manager setopt terra.enabled=0
 dnf5 -y remove code
 
@@ -39,8 +39,10 @@ dnf copr disable -y kawaiidango/pano-scrobbler
 dnf -y install plasma-bigscreen-wayland plasma-oxygen oxygen-icon-theme fcitx5 fcitx5-qt fcitx5-gtk fcitx5-configtool kcm-fcitx5 fcitx5-lua libime fcitx5-chinese-addons flashrom
 dnf -y install kontact
 
-dnf -y swap tuned-ppd power-profiles-daemon
-dnf -y remove tuned
+#dnf -y swap tuned-ppd power-profiles-daemon
+#dnf -y remove tuned 
+
+dnf -y remove supergfxctl 
 
 dnf -y install zcfan 
 # dnf5 -y install texlive*
