@@ -2,6 +2,8 @@
 
 set -euo pipefail
 
+dnf -y remove switcheroo-control supergfxctl
+
 dnf5 -y install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 dnf5 -y config-manager setopt terra.enabled=1
 dnf5 -y install zed vscodium cardwire-gui
@@ -41,8 +43,6 @@ dnf -y install kontact
 
 #dnf -y swap tuned-ppd power-profiles-daemon
 #dnf -y remove tuned 
-
-dnf -y remove supergfxctl 
 
 dnf -y install zcfan 
 # dnf5 -y install texlive*
